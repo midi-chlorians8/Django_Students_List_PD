@@ -17,4 +17,9 @@ echo "from django.contrib.auth import get_user_model; User = get_user_model(); U
 Как аналог команда для создания суперюзера - python3 manage.py createsuperuser
 
 
-python3 manage.py runserver 8002
+python3 manage.py runserver 8000
+
+
+PS
+
+Postgres пока не задействован но прописан в докер композе
