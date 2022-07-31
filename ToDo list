@@ -1,6 +1,8 @@
 Add Postgres DB (create local Postgres DB and connect to App)
+Error in psycopg2 requirement. Investigate
 
-Create Dockerfile
+
+Create Dockerfile +
 https://docs.docker.com/samples/django/
 
 Create Docker Compose +
