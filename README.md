@@ -3,7 +3,7 @@ Test site with Django backend. Show add and del students
 
 python -m venv venv #Создание вирт окружения (где будут складываться либы)
 
-.\venv\Scripts\activate #Активация вирт окружения для Windows11 (где будут складываться либы)
+source venv/bin/activate  #Активация вирт окружения для Mac
 
 pip install -r requirements.txt
 
