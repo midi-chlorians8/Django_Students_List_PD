@@ -7,7 +7,9 @@ source venv/bin/activate  #Активация вирт окружения для
 
 pip3 install -r requirements.txt # Cтавим либы в виртуальное окружение
 
+<p>
 python3 manage.py makemigrations #Сгенерить sql файл описывающий создание таблиц
+</p>
 python3 manage.py migrate #Применить к бд создание таблиц
 
 
