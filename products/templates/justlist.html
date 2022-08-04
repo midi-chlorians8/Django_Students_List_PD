@@ -1,0 +1,43 @@
+{% block content %}
+<h1>Students</h1>
+
+{% for student in students %}
+
+<p>
+    {{ student.name }} {{ student.type }}
+</p>
+
+{% endfor %}
+
+
+
+   <style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */
+.button5 {background-color: #555555;} /* Black */
+</style>
+
+<a href="http://127.0.0.1:8001/admin/students/students/add/">
+<button class="button">Add Student</button>
+</a>
+
+<p>
+<a href="http://127.0.0.1:8001/">
+<button class="button button5">Back</button>
+</a>
+</p>
+{% endblock %}

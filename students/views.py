@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+
 # Create your views here.
 def index(request):
     products = Students.objects.all()
@@ -8,6 +9,12 @@ def index(request):
     for item in products:
         res += f'<p>{item.id} {item.name} {item.type}</p>\n'
     return HttpResponse(res)
+
+
+def studslist(request):
+    students = Students.objects.all()
+    return render(request, 'justlist.html',
+                  {'students': students})
 
 
 def jl(request):
