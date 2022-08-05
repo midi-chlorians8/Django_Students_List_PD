@@ -4,10 +4,50 @@
 {% for student in students %}
 
 <p>
-    {{ student.name }} {{ student.type }}
+    <!--{{ student.name }} {{ student.type }}-->
 </p>
 
+
+
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-ltad{font-size:14px;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <td class="tg-ltad">{{ student.name }}</td>
+    <td class="tg-0lax">{{ student.type }}</td>
+  </tr>
+</thead>
+</table>
+
+
+
 {% endfor %}
+
+
+
+
+<style>
+body {
+  background-image: url('https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+}
+</style>
+
+
+
+
+
+
+
+
 
 
 
@@ -31,13 +71,17 @@
 .button5 {background-color: #555555;} /* Black */
 </style>
 
+<p>login: userUsername password: userPassword</p>
+
 <a href="http://127.0.0.1:8001/admin/students/students/add/">
 <button class="button">Add Student</button>
 </a>
 
 <p>
-<a href="http://127.0.0.1:8001/">
-<button class="button button5">Back</button>
+<a href="http://127.0.0.1:8001/demos">
+<button class="button button5">Watch demos</button>
 </a>
 </p>
+
+
 {% endblock %}
