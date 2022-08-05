@@ -27,3 +27,9 @@ python3 manage.py runserver 8000
 PS
 <p style="background-color:tomato;">Postgres пока не задействован но прописан в докер композе</p>
 
+
+
+
+
+
+
