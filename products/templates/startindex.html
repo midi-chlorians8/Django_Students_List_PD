@@ -13,19 +13,21 @@
 <img src="https://cs12.pikabu.ru/post_img/2021/01/07/0/1609967279173834874.gif" alt="Computer man" style="width:200px;height:278px;">
 
 <p>
-<a href="http://3.71.97.228:8001/students/"style="background-color:tomato;">Посмотреть список студентов</a>
+<a href="{% url 'template_home' %}"style="background-color:tomato;">Посмотреть список студентов</a>
 </p>
 
 <p>
-<a href="http://3.71.97.228:8001/admin/"style="background-color:tomato;">Админ Панель -> Дописать новых студентов</a>
+<a href="{% url 'admin:index' %}"style="background-color:tomato;">Админ Панель -> Дописать новых студентов</a>
 </p>
 
 <p>
 </p>
 
 <p>
-<a href="http://3.71.97.228:8001/products/"style="background-color:green;">Технодемо -> Продукты shop</a>
+<a href="{% url 'template_products' %}"style="background-color:green;">Технодемо -> Продукты shop</a>
 </p>
+
+
 
   <style>
 .button {
@@ -48,7 +50,7 @@
 </style>
 
 <p>
-<a href="http://3.71.97.228:8001/students">
+<a href="{% url 'template_home' %}">
 <button class="button button5">Back</button>
 </a>
 </p>

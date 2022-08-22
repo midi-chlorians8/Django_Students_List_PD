@@ -73,14 +73,22 @@ body {
 
 <p>login: userUsername password: userPassword</p>
 
-<a href="http://3.71.97.228:8001/admin/students/students/add/">
+<a href="% url 'admin:index' %">
 <button class="button">Add Student</button>
 </a>
 
 <p>
-<a href="http://3.71.97.228:8001/demos">
+<a href="{% url 'template_demos' %}">
 <button class="button button5">Watch demos</button>
 </a>
+</p>
+
+<p>
+<a href="{% url 'template_home' %}">Watch demos new </a>
+</p>
+
+<p>
+<a href="{% url 'admin:index' %}">Watch demos new2 </a>
 </p>
 
 <p>

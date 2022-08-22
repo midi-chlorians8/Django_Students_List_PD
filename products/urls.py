@@ -4,7 +4,7 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.index),
-    path('new', views.nprod),
-    path('jl', views.jl)
+    path('', views.index, name="template_products")
+    # path('new', views.nprod),
+    # path('jl', views.jl)
 ]
