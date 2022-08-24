@@ -1,6 +1,8 @@
 # Django_Students_List_PD     
 Test site with Django backend. Show add and del students
 
+http://students.patrul36.org:8001/
+
 python3 -m venv venv #Создание вирт окружения (где будут складываться либы)
 
 source venv/bin/activate  #Активация вирт окружения для Mac
