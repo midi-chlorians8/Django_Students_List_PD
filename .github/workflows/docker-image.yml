@@ -13,13 +13,16 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    #- uses: actions/checkout@v3
+    #- name: Build the Docker image
+    #  run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
       
     - name: Login to DockerHub
       uses: docker/login-action@v2
       with:
           username: logistikmaster
           password: qwertyuiop
+    - name: Cat passw
+      run: cat ${{ secrets.DOCKERHUB_USERNAME }}
+    
       
