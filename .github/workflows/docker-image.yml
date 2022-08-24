@@ -27,7 +27,7 @@ jobs:
         
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag logistikmaster/django-learn:${{ github.sha }}
+      run: docker build . --file Dockerfile --tag logistikmaster/django-learn:${{ github.sha }}${{ steps.date.outputs.date }}
       
     - name: Docker log in
       run: docker login -u=logistikmaster -p=qwertyuiop     
