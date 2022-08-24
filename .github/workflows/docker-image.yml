@@ -41,7 +41,7 @@ jobs:
 #          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Docker push
-      run: docker push logistikmaster/django-learn:$CI_COMMIT_SHORT_SHA${{ steps.date.outputs.date }}
+      run: docker push logistikmaster/django-learn:${{ github.sha }}
 
 
     
