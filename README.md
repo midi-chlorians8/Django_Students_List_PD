@@ -27,6 +27,10 @@ python3 manage.py runserver 8000
 PS
 <p style="background-color:tomato;">Postgres пока не задействован но прописан в докер композе</p>
 
+Акт вирт окруж в джанго прож вин 11
+\Django_Students_List_PD\venv\Scripts
+.\Activate.ps1
+
 
 
 

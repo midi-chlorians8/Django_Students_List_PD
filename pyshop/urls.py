@@ -28,5 +28,6 @@ urlpatterns = [
     path('testhtml/', views.testhtml),
 
     path('students/', include('students.urls')),
+    path('test_wordpress/', views.test_wordpress),
 
 ]

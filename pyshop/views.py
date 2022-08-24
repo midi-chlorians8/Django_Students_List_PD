@@ -14,3 +14,7 @@ def abc(request):
 def testhtml(request):
     return render(request, 'abc.html')
 
+def test_wordpress(request):
+    return render(request, 'wordpress_test.html')
+
+
