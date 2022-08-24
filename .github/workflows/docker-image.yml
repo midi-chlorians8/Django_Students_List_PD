@@ -23,7 +23,7 @@ jobs:
       uses: docker/login-action@v2
       with:
           username: logistikmaster
-          password: qwertyuiop
+          password: ${{ secrets.DOCKERHUB_USERNAME }}
     - name: Cat passw
       run: cat ${{ secrets.DOCKERHUB_USERNAME }}
     
