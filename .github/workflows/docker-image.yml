@@ -19,17 +19,22 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
       
+      
+      
     - name: Login to DockerHub
       uses: docker/login-action@v2
       with:
           username: logistikmaster
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          
-    - name: Build and push
-      uses: docker/build-push-action@v3
-      with:
-          push: true
-          tags: user/app:latest
+
+    - name: Docker push
+      run: docker push logistikmaster/myrepository:my-image-name:$(date +%s)
+
+#    - name: Build and push
+#      uses: docker/build-push-action@v3
+#      with:
+#          push: true
+#          tags: user/app:latest
 
     
       
