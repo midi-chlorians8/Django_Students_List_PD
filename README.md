@@ -33,7 +33,8 @@ PS
 \Django_Students_List_PD\venv\Scripts
 .\Activate.ps1
 
-12345678910
+При старте сервера нового надо исполнить фоновый скрипт
+nohup bash check_git_1.sh > output.txt
 
 
 
